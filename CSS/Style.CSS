@@ -35,7 +35,7 @@ body{
     position: relative;
     width: 800px;
     height: 64px;
-    background-color: #ffffff;
+    background-color: lightgray;
 }
 
 #heroAvatar {
@@ -69,6 +69,8 @@ body{
     width: 64px;
     height: 64px;
     background-color: green;
+    bottom: 64px;
+    left: 332px;
 }
 
 #hero{
