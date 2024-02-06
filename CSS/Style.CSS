@@ -46,18 +46,23 @@ body{
 
 #heroSpeech {
     width: 300px;
-    background-color: #ffffff;
+    height: 30px;
+    background-color: grey;
+    left: 32px;
 }
 
 #counterSpeech {
     width: 300px;
-    background-color: #ffffff;
+    height: 30px;
+    background-color: grey;
+    right: 32px;
 }
 
 #counterAvatar {
     width: 32px;
     height: 64px;
     background-color: #f0f;
+    right: 0px;
 }
 
 #squareTree {
@@ -70,6 +75,8 @@ body{
     width: 32px;
     height: 32px;
     background-color: #f0f;
+    left: 400px;
+    top: 304px;
 }
 
 #tileMap {}
