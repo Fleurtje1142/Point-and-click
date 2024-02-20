@@ -35,13 +35,17 @@ gameWindow.onclick = function (e) {
             break;
             case "doorWizardHut":
                 if(checkItem("Rusty key")){
-                    console.log("I opend the dor. Yeah!")
+                    console.log("I opend the door. Yeah!")
                 }else if(checkItem("Coin")){
                     removeItem("Coin", "coin")
                     console.log("Oh no i lost het coin and I didn't open the door... I feel kinda stupid!")
                 }else{
                     console.log("Fuck the door is locked. I don't have the key!")
                 }
+            break;
+            case "statue":{
+                console.log("heey you.... wanna know where the key is?? It is by the graves. Good luck looking.")
+            }
             break;
         default:
             break;
@@ -62,6 +66,11 @@ gameWindow.onclick = function (e) {
        
     }
 
+    /**
+     * removes item from array and the inventory
+     * @param {string} itemName 
+     * @returns 
+     */
     function checkItem(itemName){
         return inventory.includes(itemName);
     }
