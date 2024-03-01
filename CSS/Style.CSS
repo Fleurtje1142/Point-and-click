@@ -21,10 +21,10 @@ body {
 #inventoryBox {
     width: 180px;
     height: 80px;
-    background-color: #000000;
-    top: 10px;
-    left: 10px;
-    color: white
+    background-color: rgba(255, 255, 255, 0.50);
+    top: 25px;
+    left: 25px;
+    color: #000000
 }
 
 #dialogBar {
@@ -71,9 +71,10 @@ body {
 
 #brownBar{
     bottom: 0px;
-    height: 32px;
+    height: 50px;
     width: 800px;
-    background-color: #442c1c;
+    background-color: rgba(255, 255, 255, 0.50);
+    
 }
 
 #squareTree {
@@ -88,33 +89,36 @@ body {
 }
 
 #key {
-    width: 32px;
-    height: 32px;
-    left: 86px;
-    top: 450px;
+    width: 12px;
+    height: 20px;
+    
+    left: 195px;
+    top: 505px;
     opacity: 1;
     transition: all 1s ease-in-out;
 }
 
 #well {
-    width: 64px;
-    height: 64px;
-    left: 288px;
-    top: 96px;
+    width: 32px;
+    height: 25px;
+    
+    left: 715px;
+    top: 466px;
 }
 
 #doorWizardHut {
     width: 32px;
-    height: 64px;
-    left: 177px;
-    top: 287px;
+    height: 40px;
+
+    left: 85px;
+    top: 193px;
 }
 
 #statue {
-    width: 32px;
-    height: 64px;
-    left: 704px;
-    top: 287px;
+    width: 26px;
+    height: 24px;
+    left: 322px;
+    top: 134px;
 }
 
 #hero {
