@@ -97,7 +97,11 @@ gameWindow.onclick = function (e) {
         }
         break;
       case "statue":
-        showMessage(heroSpeech, "Hey a statue.. Looks okay.", heroAudio);
+        showMessage(
+          heroSpeech,
+          "Hey a otter in the water... Cute little otter.",
+          heroAudio
+        );
         setTimeout(function () {
           counterAvatar.style.opacity = 1;
         }, 4 * sec);
@@ -105,26 +109,26 @@ gameWindow.onclick = function (e) {
           showMessage,
           4.1 * sec,
           counsterSpeech,
-          "I can talk you know..",
+          "I can talk you know.. My name is Otto the otter",
           counterAudio
         );
         setTimeout(
           showMessage,
           8.1 * sec,
           heroSpeech,
-          "Wait what? That's not normal",
+          "Wait what? That's not normal. Hello Otto",
           heroAudio
         );
         setTimeout(
           showMessage,
-          12.1 * sec,
+          15 * sec,
           counsterSpeech,
-          "Just shut up.. You want a key.. Check the graves.",
+          "Just shut up... I don't want to be friends. I have a hint for you to find the key... Check the park.",
           counterAudio
         );
         setTimeout(function () {
           counterAvatar.style.opacity = 0;
-        }, 16 * sec);
+        }, 20 * sec);
         //console.log("hey you.. wanna know where the key is? It's by the graves.");
         break;
       default:
