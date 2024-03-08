@@ -8,7 +8,8 @@ let gameState = {
 };
 
 //localStorage.removeItem("gameState");
-if (Storage) {
+/**
+ * if (Storage) {
   if (localStorage.gameState) {
     // uses LocalStorage gameState string and convert it to an object. Then store it into gameState.
     gameState = JSON.parse(localStorage.gameState);
@@ -17,6 +18,7 @@ if (Storage) {
     localStorage.setItem("gameState", JSON.stringify(gameState));
   }
 }
+ */
 
 //Game window reference
 const gameWindow = document.getElementById("gameWindow");

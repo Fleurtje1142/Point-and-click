@@ -2,17 +2,25 @@ body {
     display: grid;
     grid-template-columns: auto 800px auto;
     grid-template-rows: auto 608px auto;
+    background-image: url(https://as1.ftcdn.net/v2/jpg/01/42/29/00/1000_F_142290090_YPNXXDIEPdWTexzA0dDjwoft119I8GfW.jpg);
+    background-size: cover;
+      
 }
 
 #title {
     grid-column-start: 2;
     grid-row-start: 1;
+    background-color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    font-family: monospace;
+    color: #000000;
+   
 }
 
 #gameWindow {
     width: 800px;
     height: 608px;
-    background-color: #0022fe;
+    
     grid-column-start: 2;
     grid-row-start: 2;
     position: relative;
@@ -40,9 +48,9 @@ body {
 
 #heroAvatar {
     width: 72px;
-    height: 68px;
+    height: 97px;
     bottom: 0px;
-    left: 0px;
+    left: -15px;
 }
 
 #heroSpeech {
