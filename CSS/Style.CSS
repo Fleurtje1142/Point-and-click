@@ -61,6 +61,7 @@ body {
     opacity: 0;
 }
 
+
 #counterSpeech {
     width: 300px;
     background-color: #FFFFFF;
@@ -74,6 +75,22 @@ body {
     height: 63px;
     bottom: 0px;
     right: 9px;
+    opacity: 0;
+}
+
+#doggieAvatar{
+    width: 70px;
+    height: 63px;
+    bottom: 1px;
+    right: 9px;
+    opacity: 0;
+}
+
+#doggieSpeech{
+    width: 300px;
+    background-color: #FFFFFF;
+    top: 0px;
+    right: 76px;
     opacity: 0;
 }
 
@@ -124,6 +141,14 @@ body {
     height: 24px; 
     left: 322px;
     top: 128px;
+}
+
+#doggie{
+    width: 33px;
+    height: 32px; 
+    left: 670px;
+    top: 443px;
+    opacity: 1;
 }
 
 #hero {

@@ -28,16 +28,20 @@ const sec = 1000;
 //Main Character
 const mainCharacter = document.getElementById("hero");
 const offsetCharacter = 16;
+const doggie = document.getElementById("doggie");
 
 //speech bubbles
 const heroSpeech = document.getElementById("heroSpeech");
 const counsterSpeech = document.getElementById("counterSpeech");
+const doggieSpeech = document.getElementById("doggieSpeech");
 //audio for dialog
 const heroAudio = document.getElementById("heroAudio");
 const counterAudio = document.getElementById("counterAudio");
+const doggieAudio = document.getElementById("doggieAudio");
 
 //avatar
 const counterAvatar = document.getElementById("counterAvatar");
+const doggieAvatar = document.getElementById("doggieAvatar");
 
 //Objects
 const tree1 = document.getElementById("squareTree");
@@ -56,7 +60,11 @@ gameWindow.onclick = function (e) {
   //TODO: calc offset based on character size
   //TODO: making dialog functionality
 
-  if (counterSpeech.style.opacity == 0 && heroSpeech.style.opacity == 0) {
+  if (
+    counterSpeech.style.opacity == 0 &&
+    doggieSpeech.style.opacity == 0 &&
+    heroSpeech.style.opacity == 0
+  ) {
     if (e.target.id !== "heroImage") {
       mainCharacter.style.left = x - offsetCharacter + "px";
       mainCharacter.style.top = y - offsetCharacter + "px";
@@ -130,6 +138,46 @@ gameWindow.onclick = function (e) {
         );
         setTimeout(function () {
           counterAvatar.style.opacity = 0;
+        }, 20 * sec);
+        //console.log("hey you.. wanna know where the key is? It's by the graves.");
+        break;
+
+      case "doggie":
+        showMessage(heroSpeech, "Hey a cute little doggie.", heroAudio);
+        setTimeout(function () {
+          doggieAvatar.style.opacity = 1;
+        }, 4 * sec);
+        setTimeout(
+          showMessage,
+          4.1 * sec,
+          doggieSpeech,
+          "WOEF WOEF WOEF ",
+          doggieAudio
+        );
+        setTimeout(
+          showMessage,
+          8.1 * sec,
+          heroSpeech,
+          "Owh dont get mad at me I'm just saying hi",
+          heroAudio
+        );
+        setTimeout(
+          showMessage,
+          12 * sec,
+          doggieSpeech,
+          "WOEF WOEF WOEF",
+          doggieAudio
+        );
+        setTimeout(
+          showMessage,
+          16 * sec,
+          heroSpeech,
+          "Oke bye bye now",
+          heroAudio
+        );
+        setTimeout(function () {
+          doggieAvatar.style.opacity = 0;
+          doggie.style.opacity = 0;
         }, 20 * sec);
         //console.log("hey you.. wanna know where the key is? It's by the graves.");
         break;
